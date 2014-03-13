@@ -14,19 +14,19 @@ public class OrderImplementation extends UnicastRemoteObject implements OrderInt
 	public OrderImplementation() throws RemoteException{	
 	}
         
-	public ResultWithErr selectFromInventory(String serverIP,String param)throws RemoteException{
+	public ResultWithErr selectInvetoryFromDatabase(String serverIP, String dbName, String tableName)throws RemoteException{
             // jButton1 is responsible for querying the inventory database and
         // getting the tree inventory. Once retieved, the tree inventory is
         // displayed in jTextArea1. From here the user can select an inventory
         // item by triple clicking the item.
 
-            String tableName = "";
-            if(param.equals("tree"))
-                tableName = "trees";
-            else if(param.equals("seed"))
-                tableName = "seeds";
-            else if(param.equals("shrub"))
-                tableName = "shrubs";
+//            String tableName = "";
+//            if(param.equals("tree"))
+//                tableName = "trees";
+//            else if(param.equals("seed"))
+//                tableName = "seeds";
+//            else if(param.equals("shrub"))
+//                tableName = "shrubs";
             // Database parameters
             Connection DBConn = null;           // MySQL connection handle
             String errString = null;            // String for displaying errors
@@ -37,7 +37,7 @@ public class OrderImplementation extends UnicastRemoteObject implements OrderInt
 
             // Connect to the inventory database
 
-            String sourceURL = "jdbc:mysql://" + serverIP + ":3306/inventory";
+            String sourceURL = "jdbc:mysql://" + serverIP + ":3306/" + dbName;
             try {
                 DBConn = DriverManager.getConnection(sourceURL,"remote","remote_pass");
             }catch (SQLException e) {

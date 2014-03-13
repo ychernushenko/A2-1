@@ -10,9 +10,9 @@ public class LogicImplementation extends UnicastRemoteObject implements LogicInt
     }
         
     @Override
-    public ResultWithErr selectFromInventory(String serverIP,String param)throws RemoteException{
+    public ResultWithErr selectFromInventory(String serverIP, String dbName, String tableName)throws RemoteException{
         OrderImplementation order = new OrderImplementation();
-        return order.selectFromInventory(serverIP, param);
+        return order.selectInvetoryFromDatabase(serverIP, dbName, tableName);
     }
 
     @Override
