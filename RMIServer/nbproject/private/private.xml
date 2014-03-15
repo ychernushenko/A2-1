@@ -3,10 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/MSIT-SE/Architecture/Group%20Assignment/A2/A2-2014%20Source/RMIServer/src/user/UserInterface.java</file>
-            <file>file:/D:/MSIT-SE/Architecture/Group%20Assignment/A2/A2-2014%20Source/RMIServer/src/logic/LogicInterface.java</file>
-            <file>file:/D:/MSIT-SE/Architecture/Group%20Assignment/A2/A2-2014%20Source/RMIServer/src/logic/LogicImplementation.java</file>
-            <file>file:/D:/MSIT-SE/Architecture/Group%20Assignment/A2/A2-2014%20Source/RMIServer/src/user/UserImplementation.java</file>
+            <file>file:/C:/Users/Yury/Desktop/A2-master/A2-master/RMIServer/src/RMIServer.java</file>
+            <file>file:/C:/Users/Yury/Desktop/A2-master/A2-master/RMIServer/src/orders/ResultWithErr.java</file>
+            <file>file:/C:/Users/Yury/Desktop/A2-master/A2-master/RMIServer/src/user/UserImplementation.java</file>
+            <file>file:/C:/Users/Yury/Desktop/A2-master/A2-master/RMIServer/src/inventories/Result.java</file>
+            <file>file:/C:/Users/Yury/Desktop/A2-master/A2-master/RMIServer/src/orders/OrderInterface.java</file>
+            <file>file:/C:/Users/Yury/Desktop/A2-master/A2-master/RMIServer/src/logic/LogicImplementation.java</file>
+            <file>file:/C:/Users/Yury/Desktop/A2-master/A2-master/RMIServer/src/logic/LogicInterface.java</file>
+            <file>file:/C:/Users/Yury/Desktop/A2-master/A2-master/RMIServer/src/inventories/InventoryInterface.java</file>
+            <file>file:/C:/Users/Yury/Desktop/A2-master/A2-master/RMIServer/src/inventories/InventoryImplementation.java</file>
+            <file>file:/C:/Users/Yury/Desktop/A2-master/A2-master/RMIServer/src/inventories/Inventory.java</file>
+            <file>file:/C:/Users/Yury/Desktop/A2-master/A2-master/RMIServer/src/orders/Inventory.java</file>
+            <file>file:/C:/Users/Yury/Desktop/A2-master/A2-master/RMIServer/src/orders/OrderImplementation.java</file>
+            <file>file:/C:/Users/Yury/Desktop/A2-master/A2-master/RMIServer/src/user/UserInterface.java</file>
         </group>
     </open-files>
 </project-private>

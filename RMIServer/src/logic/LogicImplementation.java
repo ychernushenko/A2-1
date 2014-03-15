@@ -1,8 +1,10 @@
 package logic;
+import inventoryMgmt.InventoryImplementation;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import orders.OrderImplementation;
 import orders.ResultWithErr;
+import inventoryMgmt.Result;
 import user.UserImplementation;
 
 public class LogicImplementation extends UnicastRemoteObject implements LogicInterface{
@@ -37,5 +39,30 @@ public class LogicImplementation extends UnicastRemoteObject implements LogicInt
     public String getUserAccess (String SQLServerIP, String username)throws RemoteException{
         UserImplementation user = new UserImplementation();
         return user.getUserAccess(SQLServerIP, username);
+    }
+
+    @Override
+        public Result selectEntriesFromInventory(String serverIP, String dbName, String tableName) throws RemoteException {
+        InventoryImplementation inventory = new InventoryImplementation();
+        return inventory.selectInvetoryEntriesFromDatabase(serverIP, dbName, tableName);
+    }
+    
+    @Override
+    public Result insertEntriesToInventory(String serverIP, String dbName, String tableName, 
+                                            String description, String productID, Integer quantity, Float perUnitCost) throws RemoteException {
+        InventoryImplementation inventory = new InventoryImplementation();
+        return inventory.isertInvetoryEntryToDatabase(serverIP, dbName, tableName, description, productID, quantity, perUnitCost);
+    }
+    
+    @Override
+    public Result deleteEntryFromInventory(String serverIP, String dbName, String tableName, String productID) throws RemoteException {
+        InventoryImplementation inventory = new InventoryImplementation();
+        return inventory.deleteInvetoryEntryFromDatabase(serverIP, dbName, tableName, productID);
+    }
+    
+    @Override
+    public Result decrementEntryFromInventory(String serverIP, String dbName, String tableName, String productID) throws RemoteException {
+        InventoryImplementation inventory = new InventoryImplementation();
+        return inventory.decrementInvetoryEntryFromDatabase(serverIP, dbName, tableName, productID);
     }
 }
